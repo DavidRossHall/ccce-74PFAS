@@ -22,6 +22,8 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FA
     Titatium Yellow #F0E100
     Persian Green #1B998B
 -->
+ 
+*this slide intentionally kept blank*
 
 ---
 count: false
@@ -29,91 +31,156 @@ background-image: url(images/1963_LashMiller.jpg)
 background-position: center
 background-size: cover
 
-## Title Goes here. 
-### **David Hall** and folks. 
-#### Dept. of Chemistry Univeristy of Toronto.
+## ToxicoProteomics Atlas of Per- and Polyfluoroalkyl Substances 
+### **David Hall**, Jiajun Han, Wen Gu, Diwen Yang, and Hui Peng. 
+#### Dept. of Chemistry and School of the Environment<br/>University of Toronto
+
+---
+
+background-image: url(images/74PFAS.png)
+background-position: center
+background-size: cover
+
+## PFAS are structurally diverse
 
 ???
 
-Hashtag equates to different text settings in css. 
-- '#' = h1
-- '##' = h2, use this for average slide title***
-- '###' = h3
+- 74 Compounds in USEPA's initial PFAS screening library 
+- Mixture of Legacy and novel PFAS
+- Varying chain length's
+- varying head groups 
+- **Enough of both to make comparisons...**
+- How to do toxicogy testing given number of compounds? 
 
-background-image: url(images/1963_LashMiller.jpg)
-background-position: center
-background-size: cover
 ---
 
-count: false
-class: title-slide
+background-image: url(images/zebrafish_embryo.jpg)
+background-position: center
+background-size: cover
 
-# Title goes here. 
-## Subtitle Goes here. 
-### **David Hall** and folks. 
-#### Dept. of Chemistry Univeristy of Toronto.
+.inverse-bottomleft[Annia Cavanagh, Wellcome Collection ] 
 
 ???
 
-Hashtag equates to different text settings in css. 
-- '#' = h1
-- '##' = h2, use this for average slide title***
-- '###' = h3
+- False-coloured SEM of a zebrafish embryo.
+- tropical freshwater fish originating from eastern Asia and is a member of the minnow family. 
+- embryo as a disease model, an assay system for drug screening and is used in cancer research. 
+- Suitable for biomedical rersearch: embryos develop quickly 
+  - single cell in a fertilized egg to tiny fish in 24 hours 
+  - vertebrates 
+  
+https://wellcomecollection.org/works/qx682kma
 
-background-image: url(images/1963_LashMiller.jpg)
-background-position: center
-background-size: cover
 ---
 
-## Slide should have a succinct topic sentence which spans no longer than two lines and contains approx. 20 words
+## Zebrafish exposure protocol
 
-```{r fig.align='center', out.width = "900px"}
+. 
 
-knitr::include_graphics(path = "images/1963_LashMiller.jpg")
+--- 
+
+## Traditional testing fails to capture mechanisms of toxicity
+
+
+```{r, out.width = "1000px", fig.align = "center"}
+
+knitr::include_graphics("images/ehpDat.png") 
 
 ```
 
----
-
-class: center, middle
-
-# For centered text use 'h1' level
-
-This is centered content.  
-
----
-
-## Do not use bullet points, but this is how to do it (didn't make pretty). 
-
-
-.left[
-- text goes here
-- this is a list
-- And these are bullet points
-] 
-
-.right[
-- But don't use bullet points
+.bottomright[
+Han et al.</br><i>EHP</i> (2020)
 ]
 
-.bottomright[Here's some citations </br> Hall et al. <i> ES&T </i> (2020)</br> Peng et al. <i> ES&T </i> 2016]
+???
+
+**16**: N-Methylperfluorooctanesulfonamide
+**24**: N-Ethylperfluorooctanesulfonamide
+**34**: Perfluoro-3,6,9-trioxatridecanoic acid
+**36**: Methyl perfluorohexanoate
+**46**: Perfluorooctanesulfonic acid
+**60**: Perfluorooctanesulfonamide
+**74**: Perfluorooctanoic acid
+
+???
+
+- Single point testing is slow, and like finding a needle in a hay stack 
+- Need a deeper picture to understand what's going
+- Since proteins are movers and shakers, why not look at them. 
+
+---
+## Proteomics (conceptually)
+
+- b/c of ctrls, deviations form normal at this point can be sig for development
+- rough explanation of proteomics to situate folks
 
 
 ---
+## Time vs. coverage 
 
-## Remember to use Github pages to easily share the presentation, note repo must be public. 
-
-```r
-# Point to correct repo branch. 
-usethis::use_github_pages(branch = "main")
-
-```
+- constraints on run times (scan #s)
+- introduce dimethyl labelling & link to tox study (L, M, H)
 
 ---
+## DIA-NN benchmarking
 
-## For more info, check out the following: 
+- human cells 1:2:4 results
+- Correlation between channels for human samples, slope should reflect differences in loading. 
 
-- [*Meet xaringang* by Alison Hill](https://arm.rbind.io/slides/xaringan.html)
+---
+## DIA-NN vs. MQ 
 
-- [Chapter 7: xaringang Presentations of *R Markdown: The Definitive Guide* by Yihui Xie et al. ](https://bookdown.org/yihui/rmarkdown/xaringan.html)
+- correlogram between MQ and DIA-NN for intersect of two and correlation therein
+- Jaccard index of MQ and DIA-NN data 
+- Number of hits w/ MQ and DIA-NN (bar plot)
 
+---
+## QA/QC from data 
+
+---
+## Batch effect corrections (must be a way to use dimethyl labelling) 
+
+---
+## Compound 16 insights
+
+- volcano plots of high and low exposure (linked proteins)
+
+---
+## Network pathway enrichment of compound 16
+
+---
+## Heat map of total protein up and down regulation 
+
+- clustering 
+- elaborate on expanding scope to 74 pfas
+
+---
+## PFAS class effects (try and link to Tox Data)
+
+
+---
+## Conclusions & Future Directions
+
+---
+## Ackwnowledgements
+
+.pull-left[
+
+
+- Jiajun Han
+- Wen Gu
+- Diwen (Rachel) Yang
+- Jiabo Liu
+- Henry Krause
+- US EPA
+
+]
+
+---
+## Questions slide
+  
+---
+## 8:2 FTAC & FSPE scheme
+
+---
+## 8:2 FTAC results 
