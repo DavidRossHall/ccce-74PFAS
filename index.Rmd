@@ -66,8 +66,8 @@ background-size: cover
 - **Enough of both to make comparisons...**
 - How to do toxicogy testing given number of compounds? 
 - image source: https://wellcomecollection.org/works/pftqz7hc
-
 ---
+
 
 background-image: url(images/zebrafish_embryo.jpg)
 background-position: center
@@ -89,9 +89,16 @@ background-size: cover
 
 ## Zebrafish exposure protocol
 
+```{r, out.width = "900px", fig.align = "center"}
+knitr::include_graphics("images/OECD_testing.png") 
 
+```
 
---- 
+.bottomright[
+OECD </br> 2022
+]
+
+---
 
 ## Traditional testing fails to capture mechanisms of toxicity
 
@@ -134,17 +141,39 @@ Han et al.</br><i>EHP</i> (2020)
 - introduce dimethyl labelling & link to tox study (L, M, H)
 
 ---
-## DIA-NN benchmarking
+## DIA-NN vs. MQ 
 
-- human cells 1:2:4 results
-- Correlation between channels for human samples, slope should reflect differences in loading. 
+.pull-left[
+
+```{r, out.width = "500px", fig.align = "center"}
+
+knitr::include_graphics("images/proteinBars.png") 
+
+```
+
+]
+
+--
+
+.pull-right[
+
+```{r, out.width = "500px", fig.align = "center"}
+
+knitr::include_graphics("images/DIAvsMQ.png") 
+
+```
+
+]
 
 ---
 ## DIA-NN vs. MQ 
 
-- correlogram between MQ and DIA-NN for intersect of two and correlation therein
-- Jaccard index of MQ and DIA-NN data 
-- Number of hits w/ MQ and DIA-NN (bar plot)
+```{r, out.width = "1000px", fig.align = "center"}
+
+knitr::include_graphics("images/jaccard_touchedup.png") 
+
+```
+
 
 ---
 ## QA/QC from data 
