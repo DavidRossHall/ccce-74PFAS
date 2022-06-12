@@ -174,25 +174,31 @@ Demichev et al., &lt;/br&gt;&lt;i&gt;Nat Methods&lt;/i&gt; (2020)
 
 ## **Recap**
 
-### - Exposing Zebrafish to 74 PFAS
+### - Exposing zebrafish to 74 PFAS
 
 
-### - Relative Quantifying proteins &lt;/br&gt; through isotopic channels
+### - Relatively quantify proteins &lt;/br&gt; through isotopic channels
 
 
-### - Using latest DIA Software
-]
---
-
-.pull-right[
-
-&lt;img src="images/31.png" width="400px" style="display: block; margin: auto;" /&gt;
-PFAS 31: Heptafluorobutyramide
-
+### -Latest DIA Software
 ]
 
 ---
-## DIA-NN vs. MQ 
+
+## Randomly selected PFAS 31 to assess DIA vs. DDA proteomics analysis
+
+
+
+
+&lt;img src="images/31.png" width="300px" style="display: block; margin: auto;" /&gt;
+PFAS 31: Heptafluorobutyramide
+
+
+
+
+
+---
+## DIA aquisition + DIA-NN software identifies more protein-groups per channel and per run compared to DDA + MaxQuant
 
 .pull-left[
 
@@ -209,66 +215,191 @@ PFAS 31: Heptafluorobutyramide
 ]
 
 ---
-## DIA-NN vs. MQ 
+## While DDA matches better within the same run, DIA-NN (plexDIA) performs better across runs
 
 &lt;img src="images/jaccard_touchedup.png" width="1000px" style="display: block; margin: auto;" /&gt;
 
 
 ---
-## QA/QC from data 
 
-- correlation of dimeth0 channels -&gt; doesn't matter that the intensities don't matter, 
+## Long-chain perfluorinated PFAS 16 was one of the most bioaccumulative and the second most toxic tested PFAS
+
+.pull-left[
+
+&lt;img src="images/16.png" width="300px" style="display: block; margin: auto;" /&gt;
+PFAS 16: N-Methylperfluoro&lt;/br&gt;octanesulfonamide
+
+]
+
+
+
+.pull-right[
+
+&lt;img src="images/ehs_mortality.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+.bottomright[
+Han et al.,&lt;/br&gt; &lt;i&gt;EHP&lt;/i&gt; (2021) 
+]
+
+
+]
 
 ---
-## Batch effect corrections (must be a way to use dimethyl labelling) 
+
+
+## PFAS 16 significantly perturbes zebrafish embryo proteome,&lt;/br&gt; with &gt; 300 up- and &gt; 100 down-regulated proteins
+
+.pull-left[
+
+&lt;img src="images/ehs_mortality.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+.bottomleft[
+Han et al.,&lt;/br&gt; &lt;i&gt;EHP&lt;/i&gt; (2021) 
+]
+]
+
+
+.pull-right[
+
+&lt;img src="images/pfas16_volcano.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+
+
+]
 
 ---
-## Compound 16 insights
 
-- volcano plots of high and low exposure (linked proteins)
+## Which zebrafish embryo proteins perturbed by PFAS 16 exposure potentially reveals mechanisms of toxicity
+
+.pull-left[
+
+&lt;img src="images/pfas16_volcano.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+
+
+]
+
+
+
+.pull-right[
+
+&lt;img src="images/pfas16_gobp_plot.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+]
+
+???
+
+- Only upregulated proteins for PFAS 16 
+- makese sense given chemical insult 
 
 ---
-## Network pathway enrichment of compound 16
+
+background-image: url(images/analyzed_pfas.png)
+background-position: center
+background-size: cover
+
+## Analyzed 22 PFAS exposures to date
+
+???
+
+- Blue boxes are compounds analyzed
 
 ---
-## Heat map of total protein up and down regulation 
+## Initial survey of global zebrafish embryo proteome perturbation begins to reveal trends
 
 &lt;img src="images/mayHeatmap.png" width="1000px" style="display: block; margin: auto;" /&gt;
 
+???
 
 - clustering 
 - elaborate on expanding scope to 74 pfas
 
----
-## PFAS class effects (try and link to Tox Data)
 
 
 ---
 ## Conclusions &amp; Future Directions
+
+
+.pull-left[
+
+Thank you: 
+
+**Conclusions**
+
+- DIA aqusition &amp; DIA-NN enable a more complete survey of the zebrafish proteome. 
+- PFAS exhibit structure specific proteome response in zebrafish embryo 
+
+**Future Work**
+
+- Finish zebrafish proteome analysis
+- Chemometrics analysis of proteome response
+- Verification experiments 
+
+
+]
+
+.pull-right[
+
+&lt;img src="images/sig_barplot.png" width="400px" style="display: block; margin: auto;" /&gt;
+
+
+
+]
 
 ---
 ## Ackwnowledgements
 
 .pull-left[
 
+Thank you: 
 
+**Zebrafish Exposure&lt;/br&gt; and Sample prep**
 - Jiajun Han
-- Wen Gu
-- Diwen (Rachel) Yang
+- Gu Wen
+- Diwen Yang
+
+**Zebrafish Rearing**
+
 - Jiabo Liu
-- Henry Krause
-- US EPA
+- Henry Kraus
+
+**PFAS Library**
+
+- Keith Houck
+- US EPA (comments &amp; bad jokes are mine and not the theirs)
 
 ]
 
 ---
-## Questions slide
+## Questions? 
+
+Email me (**davidross.hall@mail.utoronto.ca**) or Dr. Hui Peng (**hui.peng@utoronto.ca**)
+  
+&lt;img src="images/mayHeatmap.png" width="1000px" style="display: block; margin: auto;" /&gt;
+
   
 ---
-## 8:2 FTAC &amp; FSPE scheme
+## SI: We developped a Fluorous Solid Phase Enrichement strategy to enrich long-chain PFAS modified peptides
+
+&lt;img src="images/fspe.png" width="1000px" style="display: block; margin: auto;" /&gt;
+
+.bottomright[
+
+Hall D. et al, &lt;/br&gt;
+manuscript in preparation
+
+]
 
 ---
-## 8:2 FTAC results 
+## SI: 8:2 FTAC, and presumably other PFAS, can bind covalently, but not where expected
+
+&lt;img src="images/ftac_mods.png" width="1000px" style="display: block; margin: auto;" /&gt;
+.bottomright[
+
+Hall D. et al, &lt;/br&gt;
+manuscript in preparation
+
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
