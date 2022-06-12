@@ -55,7 +55,7 @@ background-image: url(images/74PFAS.png)
 background-position: center
 background-size: cover
 
-## PFAS are structurally diverse
+## Much ado about PFAS
 
 ???
 
@@ -77,6 +77,13 @@ background-size: cover
 
 ???
 
+- *Point out*: 
+  - *EYES*
+  - *Mouth* 
+  - *Pericardial Edema*: fluid build-up around heart
+  - *Spinal curvature*: tail supposed to detach from yoke-salk, and straighten out. 
+  - *Tail Dysplasia*: malformations of tail fins.  
+- *Embryo's are transparent*
 - False-coloured SEM of a zebrafish embryo.
 - tropical freshwater fish originating from eastern Asia and is a member of the minnow family. 
 - embryo as a disease model, an assay system for drug screening and is used in cancer research. 
@@ -87,7 +94,7 @@ background-size: cover
 
 ---
 
-## Zebrafish exposure protocol
+## OECD has adopted Fish Embryo Toxicity testing for acute fish toxicity measurements as it's logistically simpler and more reproducible 
 
 ```{r, out.width = "900px", fig.align = "center"}
 knitr::include_graphics("images/OECD_testing.png") 
@@ -98,9 +105,17 @@ knitr::include_graphics("images/OECD_testing.png")
 OECD </br> 2022
 ]
 
+???
+
+- Fish embryos until the onset of independent feeding are considered as nonprotected life stages
+- Easy to maintain in lab
+- beter interlab reproducibility 
+- 
+
+
 ---
 
-## Traditional testing fails to capture mechanisms of toxicity
+## Traditional fish embryo toxicity endpoints are poor predictors of </br>weak acute and sublethal toxicities
 
 
 ```{r, out.width = "1000px", fig.align = "center"}
@@ -109,12 +124,10 @@ knitr::include_graphics("images/ehpDat.png")
 
 ```
 
-.bottomright[
-Han et al.</br><i>EHP</i> (2020)
-]
 
 ???
 
+- *20 embryos per exposure, 3 exposure replicates*
 - **16**: N-Methylperfluorooctanesulfonamide
 - **24**: N-Ethylperfluorooctanesulfonamide
 - **34**: Perfluoro-3,6,9-trioxatridecanoic acid
@@ -128,20 +141,74 @@ Han et al.</br><i>EHP</i> (2020)
 
 ---
 
-## Proteomics (conceptually)
+## Proteomics can measure tens of thousands of peptides to relatively quantity thousands of proteins
 
-- b/c of ctrls, deviations form normal at this point can be sig for development
-- rough explanation of proteomics to situate folks
+```{r, out.width = "1000px", fig.align = "center"}
+knitr::include_graphics(path = "images/proteomics.png")
+```
+
+
+???
+
+proteomics 
+
+---
+## Low- and high-conc PFAS exposures were performed in triplicate; labelling accounts for batch and matrix effects
+
+
+```{r, out.width = "1000px", fig.align = "center"}
+knitr::include_graphics(path = "images/samplePrep.png")
+```
+
 
 
 ---
-## Time vs. coverage 
+## Data Independent Acquisition(DIA) captures much more sample information compared to traditional Data-Dependant Acquisition (DDA)
 
-- constraints on run times (scan #s)
-- introduce dimethyl labelling & link to tox study (L, M, H)
+```{r, out.width = "800px", fig.align = "center"}
+knitr::include_graphics(path = "images/ludwig_etal.png")
+```
+
+.bottomright[
+Ludwig et al.,</br> <i>Mol. Syst. Biol.</i> (2018) </br>
+Cox et al., </br><i>Nat. Biotechnol.</i> (2008) </br>
+Demichev et al., </br><i>Nat Methods</i> (2020)
+]
+
 
 ---
-## DIA-NN vs. MQ 
+
+
+
+
+
+.pull-left[
+
+## **Recap**
+
+### - Exposing Zebrafish to 74 PFAS
+
+
+### - Relative Quantifying proteins </br> through isotopic channels
+
+
+### - Using latest DIA Software
+]
+--
+
+.pull-right[
+
+```{r, out.width = "400px", fig.align = "center"}
+
+knitr::include_graphics(path = "images/31.png")
+
+```
+PFAS 31: Heptafluorobutyramide
+
+]
+
+---
+## DIA aquisition + DIA-NN software identifies more protein-groups per channel and per run then DDA + MaxQuant
 
 .pull-left[
 
@@ -166,7 +233,7 @@ knitr::include_graphics("images/DIAvsMQ.png")
 ]
 
 ---
-## DIA-NN vs. MQ 
+## While DDA matches better within the same run, DIA-NN (plexDIA) performs better across runs
 
 ```{r, out.width = "1000px", fig.align = "center"}
 
@@ -176,14 +243,7 @@ knitr::include_graphics("images/jaccard_touchedup.png")
 
 
 ---
-## QA/QC from data 
 
-- correlation of dimeth0 channels -> doesn't matter that the intensities don't matter, 
-
----
-## Batch effect corrections (must be a way to use dimethyl labelling) 
-
----
 ## Compound 16 insights
 
 - volcano plots of high and low exposure (linked proteins)
