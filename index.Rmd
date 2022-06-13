@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FA
     Persian Green #1B998B
 -->
  
-*this slide intentionally kept blank*
+*this slide intentionally left blank*
 
 ---
 count: false
@@ -186,7 +186,7 @@ Demichev et al., </br><i>Nat Methods</i> (2020)
 
 ## **Recap**
 
-### - Exposing zebrafish to 74 PFAS
+### - Exposing zebrafish embryos to 74 PFAS
 
 
 ### - Relatively quantify proteins </br> through isotopic channels
@@ -426,7 +426,7 @@ Thank you:
 **PFAS Library**
 
 - Keith Houck
-- US EPA (comments & bad jokes are mine and not the theirs)
+- US EPA (comments & bad jokes are mine and not theirs)
 
 ]
 
