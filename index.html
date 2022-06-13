@@ -78,13 +78,18 @@ background-size: cover
 
 ???
 
+
 - *Point out*: 
   - *EYES*
   - *Mouth* 
+  - **Pericardium**, little sac (big sac is hatching gland) 
+  
+- Tox testing
+  - *Embryo's are transparent*
+  - vertebrates 
   - *Pericardial Edema*: fluid build-up around heart
   - *Spinal curvature*: tail supposed to detach from yoke-salk, and straighten out. 
   - *Tail Dysplasia*: malformations of tail fins.  
-- *Embryo's are transparent*
 - False-coloured SEM of a zebrafish embryo.
 - tropical freshwater fish originating from eastern Asia and is a member of the minnow family. 
 - embryo as a disease model, an assay system for drug screening and is used in cancer research. 
@@ -107,7 +112,7 @@ OECD &lt;/br&gt; 2022
 
 - Fish embryos until the onset of independent feeding are considered as nonprotected life stages
 - Easy to maintain in lab
-- beter interlab reproducibility 
+- better interlab reproducibility 
 - 
 
 
@@ -142,7 +147,7 @@ OECD &lt;/br&gt; 2022
 
 ???
 
-proteomics 
+- Matching peptide sequences to in silico predicted fragments to identify peptides.  
 
 ---
 ## Low- and high-conc PFAS exposures were performed in triplicate; labelling accounts for batch and matrix effects
@@ -150,7 +155,10 @@ proteomics
 
 &lt;img src="images/samplePrep.png" width="1000px" style="display: block; margin: auto;" /&gt;
 
+???
 
+- Low- and High- level exposures to better evaluate sub-lethal exposure effects 
+- Dimethyl labelling enables relative quant and accounting for matrix effects. 
 
 ---
 ## Data Independent Acquisition(DIA) captures much more sample information compared to traditional Data-Dependant Acquisition (DDA)
@@ -163,29 +171,44 @@ Cox et al., &lt;/br&gt;&lt;i&gt;Nat. Biotechnol.&lt;/i&gt; (2008) &lt;/br&gt;
 Demichev et al., &lt;/br&gt;&lt;i&gt;Nat Methods&lt;/i&gt; (2020)
 ]
 
+???
+
+- **DDA**
+  - One peptide sequenced / MS2 event
+  - **Stochastic peak picking**, poor reproducibility. 
+  - Finite amount of MS2 scan events, upper bound on DDA coverage 
+  - straightforward peptide sequencing
+  - Use **MaxQuant** as benchmark software
+- **DIA**
+  - multiple peptides / MS2 event
+  - greater coverage 
+  - More complex data + Spectral Library = greater software demands. 
+  - **DIA-NN** uses neural networks for and interference for deep, robust, and reliable, proteome coverage 
 
 ---
-
-
-
-
 
 .pull-left[
 
 ## **Recap**
 
-### - Exposing zebrafish embryos to 74 PFAS
+### 1 -  Exposing zebrafish embryos to 74 PFAS
 
 
-### - Relatively quantify proteins &lt;/br&gt; through isotopic channels
+### 2 - Relatively quantify proteins &lt;/br&gt; through isotopic channels
 
 
-### -Latest DIA Software
+### 3 - Latest DIA Software
 ]
+
+???
+
+- Onwards to how our data actuallly looks
+- Begining with a comparison between the two software. 
 
 ---
 
-## Randomly selected PFAS 31 to assess DIA vs. DDA proteomics analysis
+## Randomly selected PFAS 31 exposure samples to assess DIA vs. DDA proteomics analysis
+
 
 
 
@@ -214,11 +237,22 @@ PFAS 31: Heptafluorobutyramide
 
 ]
 
+???
+
+- UpsetPlot, similar to venn diagram but shows all intersections
+- Lower number of proteins in these because only confidently ID proteins (one protein per group)
+- 
+
 ---
 ## While DDA matches better within the same run, DIA-NN (plexDIA) performs better across runs
 
 &lt;img src="images/jaccard_touchedup.png" width="1000px" style="display: block; margin: auto;" /&gt;
 
+???
+
+- Jaccard index shows the overlap between batches
+- MQ better within the same run, by definition on how it works, but recall much less hits
+- lack of overlap between runs will severely hamper downstream analysis b/c of stats 
 
 ---
 
@@ -231,8 +265,6 @@ PFAS 16: N-Methylperfluoro&lt;/br&gt;octanesulfonamide
 
 ]
 
-
-
 .pull-right[
 
 &lt;img src="images/ehs_mortality.png" width="400px" style="display: block; margin: auto;" /&gt;
@@ -240,9 +272,12 @@ PFAS 16: N-Methylperfluoro&lt;/br&gt;octanesulfonamide
 .bottomright[
 Han et al.,&lt;/br&gt; &lt;i&gt;EHP&lt;/i&gt; (2021) 
 ]
-
-
 ]
+
+???
+
+- 2nd most toxic 
+- Somewhat bio-accumulative 
 
 ---
 
@@ -291,6 +326,8 @@ Han et al.,&lt;/br&gt; &lt;i&gt;EHP&lt;/i&gt; (2021)
 
 - Only upregulated proteins for PFAS 16 
 - makese sense given chemical insult 
+- H2O2 and Eye Lense Development, possible oxidative stress and poor eye development
+- These are two testable endpoints. 
 
 ---
 
@@ -303,6 +340,7 @@ background-size: cover
 ???
 
 - Blue boxes are compounds analyzed
+- All samples are prepapred though, just waiting on instrument run-time. 
 
 ---
 ## Initial survey of global zebrafish embryo proteome perturbation begins to reveal trends
@@ -313,6 +351,7 @@ background-size: cover
 
 - clustering 
 - elaborate on expanding scope to 74 pfas
+- Interesting that 13 has a small batch of v. down regulated proteins, interesting because compound 13 is a small triflate.
 
 
 
